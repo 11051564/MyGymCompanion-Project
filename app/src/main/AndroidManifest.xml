@@ -7,15 +7,30 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        <activity
-            android:name=".HomeActivity"
-            android:label="@string/app_name" >
+
+        <activity android:name=".HomeActivity"
+            android:label="Home"
+            android:theme="@style/AppTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".FirstActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+
+        <activity android:name=".WorkoutActivity"
+            android:label="Workout Area"
+            android:theme="@style/AppTheme" />
+
+        <activity android:name=".BMIActivity"
+            android:label="BMI Area"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".StatsActivity"
+            android:label="Statistics Area"
+            android:theme="@style/AppTheme" />
     </application>
 
 </manifest>

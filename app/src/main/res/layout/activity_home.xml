@@ -1,11 +1,75 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".HomeActivity">
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff8fb2ff"
+    android:padding="30dp">
+    <Button
+        android:layout_width="103dp"
+        android:layout_height="95dp"
+        android:text="Workout"
+        android:id="@+id/buttonWorkout"
+        android:layout_gravity="left|top"
+        android:textSize="13sp"
+        android:background="#ff1dff00"
+        android:textColor="@android:color/black"
+        android:padding="10dp" />
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="103dp"
+        android:layout_height="95dp"
+        android:text="Exercises\n&amp;\nMachines"
+        android:id="@+id/buttonMachines"
+        android:layout_gravity="right|center_vertical"
+        android:textSize="13sp"
+        android:background="#ff1dff00"
+        android:textColor="@android:color/black"
+        android:padding="10dp"
+        android:visibility="invisible" />
 
-</RelativeLayout>
+    <Button
+        android:layout_width="103dp"
+        android:layout_height="95dp"
+        android:text="Workout History"
+        android:id="@+id/buttonStats"
+        android:layout_gravity="left|bottom"
+        android:textSize="13sp"
+        android:background="#ff1dff00"
+        android:textColor="@android:color/black"
+        android:padding="10dp" />
+
+    <Button
+        android:layout_width="103dp"
+        android:layout_height="95dp"
+        android:text="Edit workout"
+        android:id="@+id/buttonEditWorkout"
+        android:layout_gravity="right|top"
+        android:textSize="13sp"
+        android:background="#ff1dff00"
+        android:textColor="@android:color/black"
+        android:padding="10dp"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="103dp"
+        android:layout_height="95dp"
+        android:text="Reset App"
+        android:id="@+id/buttonReset"
+        android:layout_gravity="right|bottom"
+        android:textSize="13sp"
+        android:background="#ff1dff00"
+        android:textColor="@android:color/black"
+        android:padding="10dp" />
+
+    <Button
+        android:layout_width="103dp"
+        android:layout_height="95dp"
+        android:text="Body Mass Index (BMI) Calculator"
+        android:id="@+id/buttonBMI"
+        android:layout_gravity="left|center_vertical"
+        android:textSize="13sp"
+        android:background="#ff1dff00"
+        android:textColor="@android:color/black"
+        android:padding="10dp" />
+
+</FrameLayout>
