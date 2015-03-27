@@ -1,0 +1,1537 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ff2aeaff"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <!-- start block -->
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"  android:layout_gravity="center_horizontal"
+        android:id="@+id/starjumps_block" android:visibility="gone"
+        android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginLeft="10dp" android:padding="5dp"
+        android:background="#ff95ffb8">
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <!-- workout pic -->
+            <ImageView
+                android:layout_width="100dp" android:layout_height="100dp" android:layout_marginRight="10dp"
+                android:id="@+id/imgStarJumps" android:src="@drawable/starjumps"/>
+
+            <LinearLayout
+                android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="match_parent">
+                <!-- title -->
+                <TextView
+                    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp"
+                    android:text="Star Jumps"  android:id="@+id/textView4"
+                    android:textColor="#ff000000" android:gravity="center"
+                    android:background="#ff96cbff"
+                    android:autoText="true"
+                    android:textSize="16sp"
+                    android:textIsSelectable="true" />
+                <!-- info -->
+
+
+
+                <!--<LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="6dp"
+                            android:text="+"
+                            android:id="@+id/button"
+                            android:background="#ffff7faa" />
+
+                        <Button
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+
+                            android:text="-"
+                            android:id="@+id/button2"
+                            android:background="#ffff7faa" />
+                    </LinearLayout>
+
+                </LinearLayout>-->
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5px">
+                    <TextView
+                        android:layout_width="74dp" android:layout_height="wrap_content"
+                        android:text="Amount: " android:id="@+id/t1" android:layout_marginRight="2dp" />
+                    <TextView
+                        android:layout_width="40dp" android:layout_height="wrap_content"
+                        android:text="" android:id="@+id/txtStarJumps" />
+
+                    <Button
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="12dp"
+                        android:text="+"
+                        android:id="@+id/starchange"
+                        android:background="#ffae00b2"
+                        android:layout_gravity="right"
+                        android:textColor="#ffbcffbd" />
+
+                    <Button
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:text="-"
+                        android:id="@+id/staramountminus"
+                        android:background="#ffff7faa"
+                        android:layout_gravity="right" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+                    <TextView
+                        android:layout_width="74dp" android:layout_height="wrap_content"
+                        android:text="Repetitions: " android:id="@+id/t2" android:layout_marginRight="2dp" />
+                    <TextView
+                        android:layout_width="40dp" android:layout_height="wrap_content"
+                        android:id="@+id/txtStarJumpsReps" />
+
+                    <Button
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="12dp"
+                        android:text="+"
+                        android:id="@+id/starrepplus"
+                        android:background="#ffae00b2"
+                        android:textColor="#ffbcffbd" />
+
+                    <Button
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+
+                        android:text="-"
+                        android:id="@+id/starrepminus"
+                        android:background="#ffff7faa" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:background="#ffff6d64"
+            android:id="@+id/layoutCheckStarJumps">
+
+            <CheckBox
+                android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:checked="false" android:layout_marginTop="1dp" android:clickable="true" android:enabled="true"
+                android:text="Complete?" android:id="@+id/checkBoxStarJumps"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- end block -->
+
+    <!-- start block -->
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"  android:layout_gravity="center_horizontal"
+        android:id="@+id/pushups_block" android:visibility="gone"
+        android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginLeft="10dp" android:padding="5dp"
+        android:background="#ff95ffb8">
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <!-- workout pic -->
+            <ImageView
+                android:layout_width="100dp" android:layout_height="100dp" android:layout_marginRight="10dp"
+                android:id="@+id/imgPushUps" android:src="@drawable/pushups"/>
+
+            <LinearLayout
+                android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="match_parent">
+                <!-- title -->
+                <TextView
+                    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp"
+                    android:text="Push Ups"  android:id="@+id/title_pushups"
+                    android:textColor="#ff000000" android:gravity="center"
+                    android:background="#ff96cbff"
+                    android:autoText="true"
+                    android:textSize="16sp"
+                    android:textIsSelectable="true" />
+                <!-- info -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5px">
+                    <TextView
+                        android:layout_width="75dp" android:layout_height="wrap_content"
+                        android:text="Amount: " android:id="@+id/t3" android:layout_marginRight="2dp"
+                        android:textColor="#ff504128" />
+                <TextView
+                    android:layout_width="40dp" android:layout_height="wrap_content"
+                    android:text="" android:id="@+id/amountPushUps" />
+                    <Button
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="12dp"
+                        android:text="+"
+                        android:id="@+id/pushupamountplus"
+                        android:background="#ffae00b2"
+                        android:layout_gravity="right"
+                        android:onClick="boom"
+                        android:textColor="#ffbcffbd" />
+
+                    <Button
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:text="-"
+                        android:id="@+id/pushupamountminus"
+                        android:background="#ffff7faa"
+                        android:layout_gravity="right" />
+</LinearLayout><LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5px">
+                <TextView
+                    android:layout_width="75dp" android:layout_height="wrap_content"
+                    android:text="Repetitions:" android:id="@+id/trep11" android:layout_marginRight="2dp"
+                    android:textColor="#ff504128" />
+                <TextView
+                    android:layout_width="40dp" android:layout_height="wrap_content"
+                    android:text="" android:id="@+id/amountPushUpsReps" />
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="12dp"
+                    android:text="+"
+                    android:id="@+id/pushuprepplus"
+                    android:background="#ffae00b2"
+                    android:layout_gravity="right"
+                    android:textColor="#ffbcffbd" />
+
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:text="-"
+                    android:id="@+id/pushuprepminus"
+                    android:background="#ffff7faa"
+                    android:layout_gravity="right" />
+            </LinearLayout></LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:background="#ffff6d64"
+            android:id="@+id/layoutCheckPushUps">
+
+            <CheckBox
+                android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:checked="false" android:layout_marginTop="1dp" android:clickable="true" android:enabled="true"
+                android:text="Complete?" android:id="@+id/checkBoxPushUp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- end block -->
+
+    <!-- start block -->
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"  android:layout_gravity="center_horizontal"
+        android:id="@+id/situps_block" android:visibility="gone"
+        android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginLeft="10dp" android:padding="5dp"
+        android:background="#ff95ffb8">
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <!-- workout pic -->
+            <ImageView
+                android:layout_width="100dp" android:layout_height="100dp" android:layout_marginRight="10dp"
+                android:id="@+id/imgSitUps" android:src="@drawable/situps"/>
+
+            <LinearLayout
+                android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="match_parent">
+                <!-- title -->
+                <TextView
+                    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp"
+                    android:text="Sit Ups"  android:id="@+id/title_situps"
+                    android:textColor="#ff000000" android:gravity="center"
+                    android:background="#ff96cbff"
+                    android:autoText="true"
+                    android:textSize="16sp"
+                    android:textIsSelectable="true" />
+                <!-- info -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5px">
+                    <TextView
+                        android:layout_width="75dp" android:layout_height="wrap_content"
+                        android:text="Amount: " android:id="@+id/t6" android:layout_marginRight="2dp"
+                        android:textColor="#ff504128" />
+                <TextView
+                    android:layout_width="40dp" android:layout_height="wrap_content"
+                    android:text="" android:id="@+id/amountSitUps" />
+                    <Button
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="12dp"
+                        android:text="+"
+                        android:id="@+id/situpamountplus"
+                        android:background="#ffae00b2"
+                        android:layout_gravity="right"
+                        android:textColor="#ffbcffbd" />
+
+                    <Button
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:text="-"
+                        android:id="@+id/situpamountminus"
+                        android:background="#ffff7faa"
+                        android:layout_gravity="right" />
+</LinearLayout><LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5px">
+                <TextView
+                    android:layout_width="75dp" android:layout_height="wrap_content"
+                    android:text="Repetitions:" android:id="@+id/t12" android:layout_marginRight="2dp"
+                    android:textColor="#ff504128" />
+                <TextView
+                    android:layout_width="40dp" android:layout_height="wrap_content"
+                    android:text="" android:id="@+id/amountSitUpsReps" />
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="12dp"
+                    android:text="+"
+                    android:id="@+id/situprepplus"
+                    android:background="#ffae00b2"
+                    android:layout_gravity="right"
+                    android:textColor="#ffbcffbd" />
+
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:text="-"
+                    android:id="@+id/situprepminus"
+                    android:background="#ffff7faa"
+                    android:layout_gravity="right" />
+
+            </LinearLayout></LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:background="#ffff6d64"
+            android:id="@+id/layoutCheckSitUps">
+
+            <CheckBox
+                android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:checked="false" android:layout_marginTop="1dp" android:clickable="true" android:enabled="true"
+                android:text="Complete?" android:id="@+id/checkBoxSitUp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- end block -->
+
+    <!-- start block -->
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"  android:layout_gravity="center_horizontal"
+        android:id="@+id/plank_block" android:visibility="gone"
+        android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginLeft="10dp" android:padding="5dp"
+        android:background="#ff95ffb8">
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <!-- workout pic -->
+            <ImageView
+                android:layout_width="100dp" android:layout_height="100dp" android:layout_marginRight="10dp"
+                android:id="@+id/imgPlank" android:src="@drawable/plank"/>
+
+            <LinearLayout
+                android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="match_parent">
+                <!-- title -->
+                <TextView
+                    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp"
+                    android:text="Plank"  android:id="@+id/title_plank"
+                    android:textColor="#ff000000" android:gravity="center"
+                    android:background="#ff96cbff"
+                    android:autoText="true"
+                    android:textSize="16sp"
+                    android:textIsSelectable="true" />
+                <!-- info -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5px">
+                    <TextView
+                        android:layout_width="40dp" android:layout_height="wrap_content"
+                        android:text="Time: " android:id="@+id/time1" android:layout_marginRight="2dp"
+                        android:textColor="#ff504128" />
+
+                    <TextView
+                        android:layout_width="74dp" android:layout_height="wrap_content"
+                        android:text="" android:id="@+id/amountPlank" />
+
+                </LinearLayout><LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5px">
+
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="12dp"
+                    android:text="+"
+                    android:id="@+id/plankplus"
+                    android:background="#ffae00b2"
+                    android:layout_gravity="right"
+                    android:textColor="#ffbcffbd" />
+
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:text="-"
+                    android:id="@+id/plankminus"
+                    android:background="#ffff7faa"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="20dp" />
+            </LinearLayout></LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:background="#ffff6d64"
+            android:id="@+id/layoutCheckPlank">
+
+            <CheckBox
+                android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:checked="false" android:layout_marginTop="1dp" android:clickable="true" android:enabled="true"
+                android:text="Complete?" android:id="@+id/checkBoxPlank"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- end block -->
+
+    <!-- start block -->
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"  android:layout_gravity="center_horizontal"
+        android:id="@+id/rowing_block" android:visibility="gone"
+        android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginLeft="10dp" android:padding="5dp"
+        android:background="#ff95ffb8">
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <!-- workout pic -->
+            <ImageView
+                android:layout_width="100dp" android:layout_height="100dp" android:layout_marginRight="10dp"
+                android:id="@+id/imgRowing" android:src="@drawable/rowing"/>
+
+            <LinearLayout
+                android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="match_parent">
+                <!-- title -->
+                <TextView
+                    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp"
+                    android:text="Rowing"  android:id="@+id/title_rowing"
+                    android:textColor="#ff000000" android:gravity="center" android:layout_marginRight="2dp"
+                    android:background="#ff96cbff"
+                    android:autoText="true"
+                    android:textSize="16sp"
+                    android:textIsSelectable="true" />
+                <!-- info -->
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="40dp" android:layout_height="wrap_content"
+                        android:text="Time: " android:id="@+id/row1"
+                        android:textColor="#ff504128" />
+
+                    <TextView
+                        android:layout_width="78dp" android:layout_height="wrap_content"
+                        android:text="" android:id="@+id/amountRowing" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="3dp">
+
+                    <Button
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="12dp"
+                        android:text="+"
+                        android:id="@+id/rowingplus"
+                        android:background="#ffae00b2"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="1dp"
+                        android:textColor="#ffbcffbd" />
+
+                    <Button
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:text="-"
+                        android:id="@+id/rowingminus"
+                        android:background="#ffff7faa"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginLeft="20dp" />
+            </LinearLayout></LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:background="#ffff6d64"
+            android:id="@+id/layoutCheckRowing">
+
+            <CheckBox
+                android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:checked="false" android:layout_marginTop="1dp" android:clickable="true" android:enabled="true"
+                android:text="Complete?" android:id="@+id/checkBoxRowing"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- end block -->
+
+    <!-- start block -->
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"  android:layout_gravity="center_horizontal"
+        android:id="@+id/treadmill_block" android:visibility="gone"
+        android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginLeft="10dp" android:padding="5dp"
+        android:background="#ff95ffb8">
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <!-- workout pic -->
+            <ImageView
+                android:layout_width="100dp" android:layout_height="100dp" android:layout_marginRight="10dp"
+                android:id="@+id/imgTreadmill" android:src="@drawable/treadmill"/>
+
+            <LinearLayout
+                android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="match_parent">
+                <!-- title -->
+                <TextView
+                    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp"
+                    android:text="Treadmill"  android:id="@+id/title_treadmill"
+                    android:textColor="#ff000000" android:gravity="center" android:layout_marginRight="2dp"
+                    android:background="#ff96cbff"
+                    android:autoText="true"
+                    android:textSize="16sp"
+                    android:textIsSelectable="true" />
+                <!-- info -->
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="40dp" android:layout_height="wrap_content"
+                        android:text="Time: " android:id="@+id/t1"
+                        android:textColor="#ff504128" />
+
+                    <TextView
+                        android:layout_width="78dp" android:layout_height="wrap_content"
+                        android:id="@+id/amountTreadmill" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="12dp">
+
+                    <Button
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="12dp"
+                        android:text="+"
+                        android:id="@+id/treadmillplus"
+                        android:background="#ffae00b2"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="1dp"
+                        android:textColor="#ffbcffbd" />
+
+                    <Button
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:text="-"
+                        android:id="@+id/treadmillminus"
+                        android:background="#ffff7faa"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginLeft="20dp" />
+            </LinearLayout></LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:background="#ffff6d64"
+            android:id="@+id/layoutCheckTreadmill">
+
+            <CheckBox
+                android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:checked="false" android:layout_marginTop="1dp" android:clickable="true" android:enabled="true"
+                android:text="Complete?" android:id="@+id/checkBoxTreadmill"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- end block -->
+
+    <!-- start block -->
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"  android:layout_gravity="center_horizontal"
+        android:id="@+id/stairmaster_block" android:visibility="gone"
+        android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginLeft="10dp" android:padding="5dp"
+        android:background="#ff95ffb8">
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <!-- workout pic -->
+            <ImageView
+                android:layout_width="100dp" android:layout_height="100dp" android:layout_marginRight="10dp"
+                android:id="@+id/imgStairmaster" android:src="@drawable/stairmaster"/>
+
+            <LinearLayout
+                android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="match_parent">
+                <!-- title -->
+                <TextView
+                    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp"
+                    android:text="Stairmaster"  android:id="@+id/title_stairmaster"
+                    android:textColor="#ff000000" android:gravity="center"
+                    android:background="#ff96cbff"
+                    android:autoText="true"
+                    android:textSize="16sp"
+                    android:textIsSelectable="true" />
+                <!-- info -->
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="40dp" android:layout_height="wrap_content"
+                        android:text="Time: " android:id="@+id/stairmas" android:layout_marginRight="2dp"
+                        android:textColor="#ff504128" />
+
+                    <TextView
+                        android:layout_width="78dp" android:layout_height="wrap_content"
+                        android:id="@+id/amountStairmaster" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5px"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="12dp">
+
+                    <Button
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="12dp"
+                        android:text="+"
+                        android:id="@+id/stairmasterplus"
+                        android:background="#ffae00b2"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="1dp"
+                        android:textColor="#ffbcffbd" />
+
+                    <Button
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:text="-"
+                        android:id="@+id/stairmasterminus"
+                        android:background="#ffff7faa"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginLeft="20dp" />
+
+            </LinearLayout></LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:background="#ffff6d64"
+            android:id="@+id/layoutCheckStairmaster">
+
+            <CheckBox
+                android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:checked="false" android:layout_marginTop="1dp" android:clickable="true" android:enabled="true"
+                android:text="Complete?" android:id="@+id/checkBoxStairmaster"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- end block -->
+
+    <!-- start block -->
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"  android:layout_gravity="center_horizontal"
+        android:id="@+id/bicepcurl_block" android:visibility="gone"
+        android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginLeft="10dp" android:padding="5dp"
+        android:background="#ff95ffb8">
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <!-- workout pic -->
+            <ImageView
+                android:layout_width="100dp" android:layout_height="100dp" android:layout_marginRight="10dp"
+                android:id="@+id/imgBicepCurl" android:src="@drawable/bicepcurl"/>
+
+            <LinearLayout
+                android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <!-- title -->
+                <TextView
+                    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp"
+                    android:text="Bicep Curl"  android:id="@+id/title_bicepcurl"
+                    android:textColor="#ff000000" android:gravity="center"
+                    android:background="#ff96cbff"
+                    android:autoText="true"
+                    android:textSize="16sp"
+                    android:textIsSelectable="true" />
+                <!-- info -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5px">
+                    <TextView
+                        android:layout_width="75dp" android:layout_height="wrap_content"
+                        android:text="Weight (kg): " android:id="@+id/b2" android:layout_marginRight="2dp"
+                        android:textColor="#ff504128" />
+                <TextView
+                    android:layout_width="40dp" android:layout_height="wrap_content"
+                    android:id="@+id/amountBicepCurl" />
+                    <Button
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="12dp"
+                        android:text="+"
+                        android:id="@+id/bicepweighplus"
+                        android:background="#ffae00b2"
+                        android:layout_gravity="right"
+                        android:textColor="#ffbcffbd" />
+
+                    <Button
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:text="-"
+                        android:id="@+id/bicepweightminus"
+                        android:background="#ffff7faa"
+                        android:layout_gravity="right" />
+</LinearLayout><LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5px">
+                <TextView
+                    android:layout_width="75dp" android:layout_height="wrap_content"
+                    android:text="Repetitions: " android:id="@+id/bi3" android:layout_marginRight="2dp"
+                    android:textColor="#ff504128" />
+                <TextView
+                    android:layout_width="40dp" android:layout_height="wrap_content"
+                    android:id="@+id/BicepCurlReps" />
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="12dp"
+                    android:text="+"
+                    android:id="@+id/biceprepplus"
+                    android:background="#ffae00b2"
+                    android:layout_gravity="right"
+                    android:textColor="#ffbcffbd" />
+
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:text="-"
+                    android:id="@+id/biceprepminus"
+                    android:background="#ffff7faa"
+                    android:layout_gravity="right" />
+</LinearLayout><LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5px">
+                <TextView
+                    android:layout_width="35dp" android:layout_height="wrap_content"
+                    android:text="Sets: " android:id="@+id/b4" android:layout_marginRight="2dp"
+                    android:textColor="#ff504128" />
+                <TextView
+                    android:layout_width="79dp" android:layout_height="wrap_content"
+                    android:text="" android:id="@+id/BicepCurlSets" />
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="12dp"
+                    android:text="+"
+                    android:id="@+id/bicepsetsplus"
+                    android:background="#ffae00b2"
+                    android:layout_gravity="right"
+                    android:textColor="#ffbcffbd" />
+
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:text="-"
+                    android:id="@+id/bicepsetsminus"
+                    android:background="#ffff7faa"
+                    android:layout_gravity="right" />
+            </LinearLayout></LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:background="#ffff6d64"
+            android:id="@+id/layoutCheckBicepCurl">
+
+            <CheckBox
+                android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:checked="false" android:layout_marginTop="1dp" android:clickable="true" android:enabled="true"
+                android:text="Complete?" android:id="@+id/checkBoxBicepCurl"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- end block -->
+
+    <!-- start block -->
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"  android:layout_gravity="center_horizontal"
+        android:id="@+id/calfpress_block" android:visibility="gone"
+        android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginLeft="10dp" android:padding="5dp"
+        android:background="#ff95ffb8">
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <!-- workout pic -->
+            <ImageView
+                android:layout_width="100dp" android:layout_height="100dp" android:layout_marginRight="10dp"
+                android:id="@+id/imgCalfPress" android:src="@drawable/calfpress"/>
+
+            <LinearLayout
+                android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <!-- title -->
+                <TextView
+                    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp"
+                    android:text="Calf Press"  android:id="@+id/title_calfpress"
+                    android:textColor="#ff000000" android:gravity="center"
+                    android:background="#ff96cbff"
+                    android:autoText="true"
+                    android:textSize="16sp"
+                    android:textIsSelectable="true" />
+                <!-- info -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5px">
+                    <TextView
+                        android:layout_width="75dp" android:layout_height="wrap_content"
+                        android:text="Weight (kg): " android:id="@+id/cal1" android:layout_marginRight="2dp"
+                        android:textColor="#ff504128" />
+                <TextView
+                    android:layout_width="40dp" android:layout_height="wrap_content"
+                    android:id="@+id/amountCalfPress" />
+                    <Button
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="12dp"
+                        android:text="+"
+                        android:id="@+id/calfweightplus"
+                        android:background="#ffae00b2"
+                        android:layout_gravity="right"
+                        android:textColor="#ffbcffbd" />
+
+                    <Button
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:text="-"
+                        android:id="@+id/calfweightminus"
+                        android:background="#ffff7faa"
+                        android:layout_gravity="right" />
+</LinearLayout><LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5px">
+                <TextView
+                    android:layout_width="75dp" android:layout_height="wrap_content"
+                    android:text="Repitions: " android:id="@+id/cal2" android:layout_marginRight="2dp"
+                    android:textColor="#ff504128" />
+                <TextView
+                    android:layout_width="40dp" android:layout_height="wrap_content"
+                    android:text="" android:id="@+id/CalfPresReps" />
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="12dp"
+                    android:text="+"
+                    android:id="@+id/calfrepplus"
+                    android:background="#ffae00b2"
+                    android:layout_gravity="right"
+                    android:textColor="#ffbcffbd" />
+
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:text="-"
+                    android:id="@+id/calfrepminus"
+                    android:background="#ffff7faa"
+                    android:layout_gravity="right" />
+</LinearLayout><LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5px">
+                <TextView
+                    android:layout_width="35dp" android:layout_height="wrap_content"
+                    android:text="Sets: " android:id="@+id/cal3" android:layout_marginRight="2dp"
+                    android:textColor="#ff504128" />
+                <TextView
+                    android:layout_width="79dp" android:layout_height="wrap_content"
+                    android:text="" android:id="@+id/CalfPressSets" />
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="12dp"
+                    android:text="+"
+                    android:id="@+id/calfsetplus"
+                    android:background="#ffae00b2"
+                    android:layout_gravity="right"
+                    android:textColor="#ffbcffbd" />
+
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:text="-"
+                    android:id="@+id/calfsetminus"
+                    android:background="#ffff7faa"
+                    android:layout_gravity="right" />
+
+            </LinearLayout></LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:background="#ffff6d64"
+            android:id="@+id/layoutCheckCalfPress">
+
+            <CheckBox
+                android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:checked="false" android:layout_marginTop="1dp" android:clickable="true" android:enabled="true"
+                android:text="Complete?" android:id="@+id/checkBoxCalfPress"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- end block -->
+    <!-- start block -->
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"  android:layout_gravity="center_horizontal"
+        android:id="@+id/abcrunch_block" android:visibility="gone"
+        android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginLeft="10dp" android:padding="5dp"
+        android:background="#ff95ffb8">
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <!-- workout pic -->
+            <ImageView
+                android:layout_width="100dp" android:layout_height="100dp" android:layout_marginRight="10dp"
+                android:id="@+id/imgAbCrunch" android:src="@drawable/abcrunch"/>
+
+            <LinearLayout
+                android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <!-- title -->
+                <TextView
+                    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp"
+                    android:text="Ab Crunch"  android:id="@+id/title_abcrunch"
+                    android:textColor="#ff000000" android:gravity="center"
+                    android:background="#ff96cbff"
+                    android:autoText="true"
+                    android:textSize="16sp"
+                    android:textIsSelectable="true" />
+                <!-- info -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5px">
+                    <TextView
+                        android:layout_width="75dp" android:layout_height="wrap_content"
+                        android:text="Weight: " android:id="@+id/ab1" android:layout_marginRight="2dp"
+                        android:textColor="#ff504128" />
+                    <TextView
+                        android:layout_width="40dp" android:layout_height="wrap_content"
+                        android:id="@+id/amountAbCrunch" />
+                    <Button
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="12dp"
+                        android:text="+"
+                        android:id="@+id/abcrunchweighplus"
+                        android:background="#ffae00b2"
+                        android:layout_gravity="right"
+                        android:textColor="#ffbcffbd" />
+
+                    <Button
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:text="-"
+                        android:id="@+id/abcrunchweightminus"
+                        android:background="#ffff7faa"
+                        android:layout_gravity="right" />
+                </LinearLayout><LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5px">
+                <TextView
+                    android:layout_width="75dp" android:layout_height="wrap_content"
+                    android:text="Repetitions: " android:id="@+id/ab2" android:layout_marginRight="2dp"
+                    android:textColor="#ff504128" />
+                <TextView
+                    android:layout_width="40dp" android:layout_height="wrap_content"
+                    android:id="@+id/AbCrunchReps" />
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="12dp"
+                    android:text="+"
+                    android:id="@+id/abcrunchplus"
+                    android:background="#ffae00b2"
+                    android:layout_gravity="right"
+                    android:textColor="#ffbcffbd" />
+
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:text="-"
+                    android:id="@+id/abcrunchminus"
+                    android:background="#ffff7faa"
+                    android:layout_gravity="right" />
+            </LinearLayout><LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5px">
+                <TextView
+                    android:layout_width="35dp" android:layout_height="wrap_content"
+                    android:text="Sets: " android:id="@+id/ab3" android:layout_marginRight="2dp"
+                    android:textColor="#ff504128" />
+                <TextView
+                    android:layout_width="79dp" android:layout_height="wrap_content"
+                    android:id="@+id/AbCrunchSets" />
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="12dp"
+                    android:text="+"
+                    android:id="@+id/abcrunchsetsplus"
+                    android:background="#ffae00b2"
+                    android:layout_gravity="right"
+                    android:textColor="#ffbcffbd" />
+
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:text="-"
+                    android:id="@+id/abcrunchsetminus"
+                    android:background="#ffff7faa"
+                    android:layout_gravity="right" />
+            </LinearLayout></LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:background="#ffff6d64"
+            android:id="@+id/layoutCheckAbCrunch">
+
+            <CheckBox
+                android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:checked="false" android:layout_marginTop="1dp" android:clickable="true" android:enabled="true"
+                android:text="Complete?" android:id="@+id/checkBoxAbCrunch"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- end block -->
+
+    <!-- start block -->
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"  android:layout_gravity="center_horizontal"
+        android:id="@+id/legpress_block" android:visibility="gone"
+        android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginLeft="10dp" android:padding="5dp"
+        android:background="#ff95ffb8">
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <!-- workout pic -->
+            <ImageView
+                android:layout_width="100dp" android:layout_height="100dp" android:layout_marginRight="10dp"
+                android:id="@+id/imgLegPress" android:src="@drawable/legpress"/>
+
+            <LinearLayout
+                android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <!-- title -->
+                <TextView
+                    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp"
+                    android:text="Leg Press"  android:id="@+id/title_legpress"
+                    android:textColor="#ff000000" android:gravity="center"
+                    android:background="#ff96cbff"
+                    android:autoText="true"
+                    android:textSize="16sp"
+                    android:textIsSelectable="true" />
+                <!-- info -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5px">
+                    <TextView
+                        android:layout_width="75dp" android:layout_height="wrap_content"
+                        android:text="Weight (kg): " android:id="@+id/leg2" android:layout_marginRight="2dp"
+                        android:textColor="#ff504128" />
+                <TextView
+                    android:layout_width="40dp" android:layout_height="wrap_content"
+                    android:id="@+id/amountLegPress" />
+                    <Button
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="12dp"
+                        android:text="+"
+                        android:id="@+id/legweightplus"
+                        android:background="#ffae00b2"
+                        android:layout_gravity="right"
+                        android:textColor="#ffbcffbd" />
+
+                    <Button
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:text="-"
+                        android:id="@+id/legweightminus"
+                        android:background="#ffff7faa"
+                        android:layout_gravity="right" />
+</LinearLayout><LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5px">
+                <TextView
+                    android:layout_width="75dp" android:layout_height="wrap_content"
+                    android:text="Repetitions: " android:id="@+id/leg3" android:layout_marginRight="2dp"
+                    android:textColor="#ff504128" />
+                <TextView
+                    android:layout_width="40dp" android:layout_height="wrap_content"
+                    android:id="@+id/amountLegPressRep" />
+
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:text="+"
+                    android:id="@+id/legrepplus"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="12dp"
+                    android:background="#ffae00b2"
+                    android:textColor="#ffbcffbd" />
+
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:text="-"
+                    android:id="@+id/legrepminus"
+                    android:layout_gravity="right"
+                    android:background="#ffff7faa" />
+            </LinearLayout><LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5px">
+                <TextView
+                    android:layout_width="35dp" android:layout_height="wrap_content"
+                    android:text="Sets: " android:id="@+id/leg1" android:layout_marginRight="2dp"
+                    android:textColor="#ff504128" />
+                <TextView
+                    android:layout_width="79dp" android:layout_height="wrap_content"
+                    android:id="@+id/legPressSets" />
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="12dp"
+                    android:text="+"
+                    android:id="@+id/legsetplus"
+                    android:background="#ffae00b2"
+                    android:layout_gravity="right"
+                    android:textColor="#ffbcffbd" />
+
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:text="-"
+                    android:id="@+id/legsetminus"
+                    android:background="#ffff7faa"
+                    android:layout_gravity="right" />
+            </LinearLayout></LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:background="#ffff6d64"
+            android:id="@+id/layoutCheckLegPress">
+
+            <CheckBox
+                android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:checked="false" android:layout_marginTop="1dp" android:clickable="true" android:enabled="true"
+                android:text="Complete?" android:id="@+id/checkBoxLegPress"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- end block -->
+
+    <!-- start block -->
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"  android:layout_gravity="center_horizontal"
+        android:id="@+id/benchpress_block" android:visibility="gone"
+        android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginLeft="10dp" android:padding="5dp"
+        android:background="#ff95ffb8">
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <!-- workout pic -->
+            <ImageView
+                android:layout_width="100dp" android:layout_height="100dp" android:layout_marginRight="10dp"
+                android:id="@+id/imgBenchPress" android:src="@drawable/benchpress"/>
+
+            <LinearLayout
+                android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <!-- title -->
+                <TextView
+                    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp"
+                    android:text="Bench Press"  android:id="@+id/title_benchpress"
+                    android:textColor="#ff000000" android:gravity="center"
+                    android:background="#ff96cbff"
+                    android:autoText="true"
+                    android:textSize="16sp"
+                    android:textIsSelectable="true" />
+                <!-- info -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5px">
+                    <TextView
+                        android:layout_width="75dp" android:layout_height="wrap_content"
+                        android:text="Weight (kg): " android:id="@+id/bench1" android:layout_marginRight="2dp"
+                        android:textColor="#ff504128" />
+                <TextView
+                    android:layout_width="40dp" android:layout_height="wrap_content"
+                    android:id="@+id/amountBenchPress" />
+                    <Button
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="12dp"
+                        android:text="+"
+                        android:id="@+id/benchweightplus"
+                        android:background="#ffae00b2"
+                        android:layout_gravity="right"
+                        android:textColor="#ffbcffbd" />
+
+                    <Button
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:text="-"
+                        android:id="@+id/benchweightminus"
+                        android:background="#ffff7faa"
+                        android:layout_gravity="right" />
+</LinearLayout><LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5px">
+                <TextView
+                    android:layout_width="75dp" android:layout_height="wrap_content"
+                    android:text="Repetitions: " android:id="@+id/bench2"  android:layout_marginRight="2dp"
+                    android:textColor="#ff504128" />
+                <TextView
+                    android:layout_width="40dp" android:layout_height="wrap_content"
+                    android:id="@+id/BenchPressRep" />
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="12dp"
+                    android:text="+"
+                    android:id="@+id/benchrepplus"
+                    android:background="#ffae00b2"
+                    android:layout_gravity="right"
+                    android:textColor="#ffbcffbd" />
+
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:text="-"
+                    android:id="@+id/benchrepminus"
+                    android:background="#ffff7faa"
+                    android:layout_gravity="right" />
+</LinearLayout><LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5px">
+                <TextView
+                    android:layout_width="35dp" android:layout_height="wrap_content"
+                    android:text="Sets: " android:id="@+id/bench3" android:layout_marginRight="2dp"
+                    android:textColor="#ff504128" />
+                <TextView
+                    android:layout_width="79dp" android:layout_height="wrap_content"
+                    android:id="@+id/BenchPressSets" />
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="12dp"
+                    android:text="+"
+                    android:id="@+id/benchsetplus"
+                    android:background="#ffae00b2"
+                    android:layout_gravity="right"
+                    android:textColor="#ffbcffbd" />
+
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:text="-"
+                    android:id="@+id/benchsetminus"
+                    android:background="#ffff7faa"
+                    android:layout_gravity="right" />
+            </LinearLayout></LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:background="#ffff6d64"
+            android:id="@+id/layoutCheckBenchPress">
+
+            <CheckBox
+                android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:checked="false" android:layout_marginTop="1dp" android:clickable="true" android:enabled="true"
+                android:text="Complete?" android:id="@+id/checkBoxBenchPress"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- end block -->
+
+    <!-- start block -->
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"  android:layout_gravity="center_horizontal"
+        android:id="@+id/shoulderpress_block" android:visibility="gone"
+        android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginLeft="10dp" android:padding="5dp"
+        android:background="#ff95ffb8"
+        android:focusableInTouchMode="false">
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <!-- workout pic -->
+            <ImageView
+                android:layout_width="100dp" android:layout_height="100dp" android:layout_marginRight="10dp"
+                android:id="@+id/imgShoulderPress" android:src="@drawable/shoulderpress"/>
+
+            <LinearLayout
+                android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <!-- title -->
+                <TextView
+                    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp"
+                    android:text="Shoulder Press"  android:id="@+id/title_shoulderpress"
+                    android:textColor="#ff000000" android:gravity="center"
+                    android:background="#ff96cbff"
+                    android:autoText="true"
+                    android:textSize="16sp"
+                    android:textIsSelectable="true" />
+                <!-- info -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5px">
+                    <TextView
+                        android:layout_width="75dp" android:layout_height="wrap_content"
+                        android:text="Weight (kg): " android:id="@+id/shoulder3" android:layout_marginRight="2dp"
+                        android:textColor="#ff504128" />
+                <TextView
+                    android:layout_width="40dp" android:layout_height="wrap_content"
+                    android:id="@+id/ShoulderPress" />
+                    <Button
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="12dp"
+                        android:text="+"
+                        android:id="@+id/shoulderweightplus"
+                        android:background="#ffae00b2"
+                        android:layout_gravity="right"
+                        android:textColor="#ffbcffbd" />
+
+                    <Button
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:text="-"
+                        android:id="@+id/shoulderweightminus"
+                        android:background="#ffff7faa"
+                        android:layout_gravity="right" />
+</LinearLayout><LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5px">
+                <TextView
+                    android:layout_width="75dp" android:layout_height="wrap_content"
+                    android:text="Repetitions: " android:id="@+id/shoulder2" android:layout_marginRight="2dp"
+                    android:textColor="#ff504128" />
+                <TextView
+                    android:layout_width="40dp" android:layout_height="wrap_content"
+                    android:id="@+id/ShoulderPressReps" />
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="12dp"
+                    android:text="+"
+                    android:id="@+id/shoulderrepsplus"
+                    android:background="#ffae00b2"
+                    android:layout_gravity="right"
+                    android:textColor="#ffbcffbd" />
+
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:text="-"
+                    android:id="@+id/shoulderrepsminus"
+                    android:background="#ffff7faa"
+                    android:layout_gravity="right" />
+
+</LinearLayout><LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5px">
+                <TextView
+                    android:layout_width="35dp" android:layout_height="wrap_content"
+                    android:text="Sets: " android:id="@+id/shoulder" android:layout_marginRight="2dp"
+                    android:textColor="#ff504128" />
+                <TextView
+                    android:layout_width="79dp" android:layout_height="wrap_content"
+                    android:id="@+id/ShoulderPressSets" />
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="12dp"
+                    android:text="+"
+                    android:id="@+id/shouldersetsplus"
+                    android:background="#ffae00b2"
+                    android:layout_gravity="right"
+                    android:textColor="#ffbcffbd" />
+
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:text="-"
+                    android:id="@+id/shouldersetsminus"
+                    android:background="#ffff7faa"
+                    android:layout_gravity="right" />
+            </LinearLayout></LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:background="#ffff6d64"
+            android:id="@+id/layoutCheckShoulderPress">
+
+            <CheckBox
+                android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:checked="false" android:layout_marginTop="1dp" android:clickable="true" android:enabled="true"
+                android:text="Complete?" android:id="@+id/checkBoxShoulderPress"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Complete Workout"
+        android:id="@+id/btnCompleteWorkout"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your workout log below has been saved:\n"
+        android:id="@+id/textView6"
+        android:visibility="gone"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textView5"
+        android:visibility="invisible"
+        android:layout_marginLeft="10dp" />
+
+    <!-- end block -->
+</LinearLayout>
+</ScrollView>

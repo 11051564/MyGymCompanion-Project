@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Your saved height and weight details have been saved and placed into the textboxes, you can edit these values to check somebody else&apos;s body mass index rating.\n\nPress Calculate to obtain your BMI rating and category"
+        android:id="@+id/textView7"
+        android:layout_marginBottom="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Your height (CM):"
+            android:id="@+id/textView"
+            android:layout_alignTop="@+id/txtHeight"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_gravity="left" />
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtHeight"
+            android:text="1.7"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/txtYourBMI"
+            android:layout_toEndOf="@+id/txtYourBMI"
+            android:inputType="number"
+            android:singleLine="true"
+            android:layout_gravity="right"
+            android:layout_marginLeft="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_above="@+id/buttonCalculate"
+        android:layout_alignRight="@+id/buttonCalculate"
+        android:layout_alignEnd="@+id/buttonCalculate">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Your Weight (KG):"
+            android:id="@+id/textView3"
+            android:layout_below="@+id/txtHeight"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:singleLine="false"
+            android:layout_gravity="left" />
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtWeight"
+            android:text="80"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_toRightOf="@+id/txtYourBMI"
+            android:layout_toEndOf="@+id/txtYourBMI"
+            android:inputType="number"
+            android:singleLine="true"
+            android:layout_gravity="right"
+            android:layout_marginLeft="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/buttonCalculate"
+        android:layout_toRightOf="@+id/txtYourBMI"
+        android:layout_toEndOf="@+id/txtYourBMI">
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:text="Calculate"
+            android:id="@+id/buttonCalculate"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_gravity="left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your BMI is: "
+            android:id="@+id/txtYourBMI"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textView3"
+            android:layout_toEndOf="@+id/textView3"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtresult" />
+
+    </LinearLayout>
+
+</LinearLayout>

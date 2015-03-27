@@ -1,0 +1,317 @@
+<ScrollView
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin" android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".FirstActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout"
+        android:layout_gravity="center"
+        android:weightSum="1">
+
+        <TextView
+            android:text="Welcome to The Gym Companion\n\nAs this is your first time launching the application, please supply the following information:\n(these details affect the workout plan)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/welcome_message"
+            android:paddingTop="6dp"
+            android:textSize="16sp"
+            style="@style/Base.TextAppearance.AppCompat.Display1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"  android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Name:"
+                android:id="@+id/textViewFirstName"
+                android:layout_weight="1"
+                android:layout_gravity="center" />
+
+            <EditText
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextName"
+                android:autoText="false"
+                android:backgroundTint="#ff26ff72"
+                android:editable="false"
+                android:clickable="false"
+                android:capitalize="words"
+                android:enabled="true"
+                android:text="Name"
+                android:visibility="visible"
+                android:inputType="text"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Age:"
+                android:id="@+id/textViewAge"
+                android:layout_gravity="center"
+                android:layout_weight="1" />
+
+            <EditText
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextAge"
+                android:autoText="false"
+                android:backgroundTint="#ff26ff72"
+                android:editable="false"
+                android:clickable="false"
+                android:capitalize="words"
+                android:enabled="true"
+                android:text="20"
+                android:visibility="visible"
+                android:inputType="numberDecimal"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight (KG):"
+                android:id="@+id/textViewWeight"
+                android:layout_gravity="center"
+                android:layout_weight="1" />
+
+            <EditText
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextWeight"
+                android:autoText="false"
+                android:backgroundTint="#ff26ff72"
+                android:editable="false"
+                android:clickable="false"
+                android:capitalize="words"
+                android:enabled="true"
+                android:text="10"
+                android:visibility="visible"
+                android:singleLine="true"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Height (CM):"
+                android:id="@+id/textViewHeight"
+                android:layout_gravity="center"
+                android:layout_weight="1" />
+
+            <EditText
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextHeight"
+                android:autoText="false"
+                android:backgroundTint="#ff26ff72"
+                android:editable="false"
+                android:clickable="false"
+                android:capitalize="words"
+                android:enabled="true"
+                android:text="1.7"
+                android:visibility="visible"
+                android:inputType="numberDecimal"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp">
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="Gender:"
+                android:id="@+id/textView2"
+                android:layout_gravity="center" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.66"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:id="@+id/Gender">
+
+                <RadioButton
+                    android:text="Male"
+                    android:id="@+id/Male"
+                    android:layout_gravity="center_horizontal"
+                    android:checked="true"
+                    android:onClick="radioButtonOnClick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp" />
+
+                <RadioButton
+                    android:text="Female"
+                    android:id="@+id/Female"
+                    android:layout_gravity="center_horizontal"
+                    android:checked="false"
+                    android:onClick="radioButtonOnClick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Workout Difficulty"
+                android:id="@+id/textView3"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp">
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.66"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:weightSum="1"
+                android:layout_gravity="center_horizontal">
+
+                <RadioButton
+                    android:text="Easy"
+                    android:id="@+id/Easy"
+                    android:layout_gravity="center"
+                    android:checked="true"
+                    android:onClick="radioButtonOnClick"
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:text="Medium"
+                    android:id="@+id/Medium"
+                    android:layout_gravity="center"
+                    android:checked="false"
+                    android:onClick="radioButtonOnClick"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <RadioButton
+                    android:text="Hard"
+                    android:id="@+id/Hard"
+                    android:layout_gravity="center"
+                    android:checked="false"
+                    android:onClick="radioButtonOnClick"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Workout Plan Creation Preference:"
+                android:id="@+id/textView4"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+        <LinearLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp">
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.66"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:weightSum="1"
+                android:layout_gravity="center_horizontal">
+
+                <RadioButton
+                    android:text="Fitness"
+                    android:id="@+id/Fitness"
+                    android:layout_gravity="center"
+                    android:checked="true"
+                    android:onClick="radioButtonOnClick"
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:text="Strength"
+                    android:id="@+id/Strength"
+                    android:layout_gravity="center"
+                    android:checked="false"
+                    android:onClick="radioButtonOnClick"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <RadioButton
+                    android:text="Both"
+                    android:id="@+id/Both"
+                    android:layout_gravity="center"
+                    android:checked="false"
+                    android:onClick="radioButtonOnClick"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Details"
+            android:id="@+id/buttonSubmit"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp" />
+
+
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>
