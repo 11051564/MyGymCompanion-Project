@@ -51,7 +51,6 @@
                 android:clickable="false"
                 android:capitalize="words"
                 android:enabled="true"
-                android:text="Name"
                 android:visibility="visible"
                 android:inputType="text"
                 android:singleLine="true" />
@@ -80,7 +79,6 @@
                 android:clickable="false"
                 android:capitalize="words"
                 android:enabled="true"
-                android:text="20"
                 android:visibility="visible"
                 android:inputType="numberDecimal"
                 android:singleLine="true" />
@@ -109,7 +107,6 @@
                 android:clickable="false"
                 android:capitalize="words"
                 android:enabled="true"
-                android:text="10"
                 android:visibility="visible"
                 android:singleLine="true"
                 android:inputType="number" />
@@ -138,7 +135,6 @@
                 android:clickable="false"
                 android:capitalize="words"
                 android:enabled="true"
-                android:text="1.7"
                 android:visibility="visible"
                 android:inputType="numberDecimal"
                 android:singleLine="true" />

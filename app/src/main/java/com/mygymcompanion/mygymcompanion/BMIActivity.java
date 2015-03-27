@@ -67,7 +67,8 @@ public class BMIActivity extends ActionBarActivity {
 
     private float calculate(float weight, float height) {
         height = height / 100;
-        return (float) Math.round((weight / (height * height)) * 10) / 10;
+        //return (float) Math.round((weight / (height * height)) * 10) / 10;
+        return (float) (weight / (height * height) * 10) / 10;
         //Return as float and rounds it to nearest integer
     }
 
