@@ -334,9 +334,9 @@ public class FirstActivity extends ActionBarActivity {
             switch (workoutPref) {
                 case "fitness":
                     //mat exercises
-                    editor.putString("Star Jumps@", "25," + difficultyRate);
-                    editor.putString("Push Ups@", "10," + difficultyRate);
-                    editor.putString("Sit Ups@", "15," + difficultyRate);
+                    editor.putString("Star Jumps@", "25,2");
+                    editor.putString("Push Ups@", "10,2");
+                    editor.putString("Sit Ups@", "15,2");
                     editor.putString("Plank@", "40 seconds");
                     //exercise machines
                     editor.putString("Rowing@", "5 minutes");
@@ -354,8 +354,8 @@ public class FirstActivity extends ActionBarActivity {
                 case "strength":
                     //mat exercises
                     //editor.putString("Star Jumps", "25" + difficultyRate);
-                    editor.putString("Push Ups@", "10," + difficultyRate);
-                    editor.putString("Sit Ups@", "15," + difficultyRate);
+                    editor.putString("Push Ups@", "10,2");
+                    editor.putString("Sit Ups@", "15,2");
                     //editor.putString("Plank", "40 seconds");
                     //exercise machines
                     editor.putString("Rowing@", "5 minutes");
@@ -371,9 +371,9 @@ public class FirstActivity extends ActionBarActivity {
                     break;
                 case "both":
                     //mat exercises
-                    editor.putString("Star Jumps@", "25," + difficultyRate);
-                    editor.putString("Push Ups@", "10," + difficultyRate);
-                    editor.putString("Sit Ups@", "15," + difficultyRate);
+                    editor.putString("Star Jumps@", "25,2");
+                    editor.putString("Push Ups@", "10,2");
+                    editor.putString("Sit Ups@", "15,2");
                     editor.putString("Plank@", "40 seconds");
                     //exercise machines
                     editor.putString("Rowing@", "5 minutes");
@@ -395,9 +395,9 @@ public class FirstActivity extends ActionBarActivity {
             switch (workoutPref) {
                 case "fitness":
                     //mat exercises
-                    editor.putString("Star Jumps@", "10," + difficultyRate);
-                    editor.putString("Push Ups@", "10," + difficultyRate);
-                    editor.putString("Sit Ups@", "15," + difficultyRate);
+                    editor.putString("Star Jumps@", "10,1" + difficultyRate);
+                    editor.putString("Push Ups@", "10,1" + difficultyRate);
+                    editor.putString("Sit Ups@", "15,1" + difficultyRate);
                     editor.putString("Plank@", "20 seconds");
                     //exercise machines
                     editor.putString("Rowing@", "5 minutes");
@@ -415,8 +415,8 @@ public class FirstActivity extends ActionBarActivity {
                 case "strength":
                     //mat exercises
                     //editor.putString("Star Jumps", "10" + difficultyRate);
-                    editor.putString("Push Ups@", "10," + difficultyRate);
-                    editor.putString("Sit Ups@", "15," + difficultyRate);
+                    editor.putString("Push Ups@", "10,1");
+                    editor.putString("Sit Ups@", "15,1");
                     //editor.putString("Plank", "20 seconds");
                     //exercise machines
                     editor.putString("Rowing@", "5 minutes");
@@ -432,9 +432,9 @@ public class FirstActivity extends ActionBarActivity {
                     break;
                 case "both":
                     //mat exercises
-                    editor.putString("Star Jumps@", "10," + difficultyRate);
-                    editor.putString("Push Ups@", "10," + difficultyRate);
-                    editor.putString("Sit Ups@", "15," + difficultyRate);
+                    editor.putString("Star Jumps@", "10,1");
+                    editor.putString("Push Ups@", "10,1");
+                    editor.putString("Sit Ups@", "15,1");
                     editor.putString("Plan@k", "20 seconds");
                     //exercise machines
                     editor.putString("Rowing@", "5 minutes");
@@ -449,66 +449,7 @@ public class FirstActivity extends ActionBarActivity {
                     editor.putString("Shoulder Press@", shoulderPresskg + "," + shoulderPressReps + ",2");
                     break;
             }
-        } else if (age > 49) {
-            difficultyRate += 0;
-            setWeightValues();
-            setRepValues();
-            switch (workoutPref) {
-                case "fitness":
-                    //mat exercises
-                    editor.putString("Star Jumps@", "10," + difficultyRate);
-                    editor.putString("Push Ups@", "10," + difficultyRate);
-                    editor.putString("Sit Ups@", "15," + difficultyRate);
-                    editor.putString("Plank@", "20 seconds");
-                    //exercise machines
-                    editor.putString("Rowing@", "5 minutes");
-                    editor.putString("Treadmill@", "5 minutes");
-                    editor.putString("Stairmaster@", "5 minutes");
-                    //strength machines
-                    //editor.putString("Bicep Curl", bicepCurlkg + "," + bicepCurlReps + ",2");
-                    editor.putString("Ab Crunch@", abCrunchkg + "," + abCrunchReps + ",1");
-                    editor.putString("Calf Press@", calfPresskg + "," + calfPressReps + ",1");
-                    editor.putString("Leg Press@", legPresskg + "," + legPressReps + ",1");
-                    //editor.putString("Bench Press", benchPresskg + "," + benchPressReps + ",2");
-                    //editor.putString("Shoulder Press", shoulderPresskg + "," + shoulderPressReps + ",2");
-                    break;
-                case "strength":
-                    //mat exercises
-                    //editor.putString("Star Jumps", "10" + difficultyRate);
-                    editor.putString("Push Ups@", "10," + difficultyRate);
-                    editor.putString("Sit Ups@", "15," + difficultyRate);
-                    //editor.putString("Plank", "20 seconds");
-                    //exercise machines
-                    editor.putString("Rowing@", "5 minutes");
-                    //editor.putString("Treadmill", "5 minutes");
-                    //editor.putString("Stairmaster", "5 minutes");
-                    //strength machines
-                    editor.putString("Bicep Curl@", bicepCurlkg + "," + bicepCurlReps + ",2");
-                    editor.putString("Ab Crunch@", abCrunchkg + "," + abCrunchReps + ",2");
-                    editor.putString("Calf Press@", calfPresskg + "," + calfPressReps + ",2");
-                    editor.putString("Leg Press@", legPresskg + "," + legPressReps + ",2");
-                    editor.putString("Bench Press@", benchPresskg + "," + benchPressReps + ",2");
-                    editor.putString("Shoulder Press@", shoulderPresskg + "," + shoulderPressReps + ",2");
-                    break;
-                case "both":
-                    //mat exercises
-                    editor.putString("Star Jumps@", "10," + difficultyRate);
-                    editor.putString("Push Ups@", "10," + difficultyRate);
-                    editor.putString("Sit Ups@", "15," + difficultyRate);
-                    editor.putString("Plank@", "20 seconds");
-                    //exercise machines
-                    editor.putString("Rowing@", "5 minutes");
-                    editor.putString("Treadmill@", "5 minutes");
-                    editor.putString("Stairmaster@", "5 minutes");
-                    //strength machines
-                    editor.putString("Bicep Curl@", bicepCurlkg + "," + bicepCurlReps + ",2");
-                    editor.putString("Ab Crunch@", abCrunchkg + "," + abCrunchReps + ",2");
-                    editor.putString("Calf Press@", calfPresskg + "," + calfPressReps + ",2");
-                    editor.putString("Leg Press@", legPresskg + "," + legPressReps + ",2");
-                    editor.putString("Bench Press@", benchPresskg + "," + benchPressReps + ",2");
-                    editor.putString("Shoulder Press@", shoulderPresskg + "," + shoulderPressReps + ",2");
-                    break;
-            }
+
         }
 
         editor.commit();
@@ -516,7 +457,7 @@ public class FirstActivity extends ActionBarActivity {
 
     public void setWeightValues() {
         if (gender == "male") {
-            difficultyRate += 5;
+            difficultyRate += 2;
             if (workoutPref == "strength" || workoutPref =="both") {
                 workoutDiff = 10;
             }
@@ -529,7 +470,7 @@ public class FirstActivity extends ActionBarActivity {
             shoulderPresskg += ((difficultyRate*2) + workoutDiff);
 
         } else {
-            difficultyRate += 2;
+            difficultyRate += 1;
             if (workoutPref == "strength" || workoutPref =="both") {
                 workoutDiff = 3;
             }

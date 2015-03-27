@@ -1363,7 +1363,7 @@ public class WorkoutActivity extends ActionBarActivity {
         LinearLayout treadmill_block =(LinearLayout)findViewById(R.id.treadmill_block);
         treadmill_block.setVisibility(View.VISIBLE);
 
-        TextView txtA = (TextView) findViewById(R.id.tread111);
+        TextView txtA = (TextView) findViewById(R.id.amountTreadmill);
         String a = mValue;
         txtA.setText(a);
     }

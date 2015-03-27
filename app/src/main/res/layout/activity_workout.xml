@@ -533,12 +533,13 @@
     <!-- start block -->
     <LinearLayout
         android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"  android:layout_gravity="center_horizontal"
-        android:id="@+id/treadmill_block" android:visibility="gone"
+        android:id="@+id/treadmill_block" android:visibility="visible"
         android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginLeft="10dp" android:padding="5dp"
         android:background="#ff95ffb8">
 
         <LinearLayout
-            android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:touchscreenBlocksFocus="false">
             <!-- workout pic -->
             <ImageView
                 android:layout_width="100dp" android:layout_height="100dp" android:layout_marginRight="10dp"
